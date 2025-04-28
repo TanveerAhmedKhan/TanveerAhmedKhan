@@ -1,0 +1,222 @@
+<svg fill="none" viewBox="0 0 1200 400" width="1200" height="400" xmlns="http://www.w3.org/2000/svg">
+	<foreignObject width="100%" height="100%">
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<style>
+				@keyframes gradientBackground {
+					0% {
+						background-position: 0% 50%;
+					}
+					50% {
+						background-position: 100% 50%;
+					}
+					100% {
+						background-position: 0% 50%;
+					}
+				}
+                
+                @keyframes fadeIn {
+                    0% {
+                        opacity: 0;
+                    }
+                    100% {
+                        opacity: 1;
+                    }
+                }
+                
+                @keyframes robotMove {
+                    0% {
+                        transform: translateX(-150px);
+                    }
+                    50% {
+                        transform: translateX(150px);
+                    }
+                    100% {
+                        transform: translateX(-150px);
+                    }
+                }
+                
+                @keyframes blink {
+                    0% {
+                        opacity: 0;
+                    }
+                    50% {
+                        opacity: 1;
+                    }
+                    100% {
+                        opacity: 0;
+                    }
+                }
+                
+                @keyframes pulse {
+                    0% {
+                        transform: scale(1);
+                    }
+                    50% {
+                        transform: scale(1.05);
+                    }
+                    100% {
+                        transform: scale(1);
+                    }
+                }
+                
+				.container {
+					font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					margin: 0;
+					width: 100%;
+					height: 400px;
+					background: linear-gradient(45deg, #121212, #1e3c72, #2a5298, #1e3c72, #121212);
+					background-size: 600% 400%;
+					animation: gradientBackground 15s ease infinite;
+					color: white;
+					text-align: center;
+                    position: relative;
+                    overflow: hidden;
+				}
+                
+                .circuit-bg {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-image: 
+                        radial-gradient(circle, rgba(0,255,170,0.1) 1px, transparent 1px),
+                        linear-gradient(to right, rgba(0,255,170,0.05) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(0,255,170,0.05) 1px, transparent 1px);
+                    background-size: 30px 30px, 30px 30px, 30px 30px;
+                    z-index: 1;
+                }
+                
+                .binary {
+                    position: absolute;
+                    font-family: monospace;
+                    font-size: 14px;
+                    color: rgba(0, 255, 170, 0.3);
+                    z-index: 2;
+                }
+                
+                .binary-1 { top: 10%; left: 10%; animation: blink 2s infinite; }
+                .binary-2 { top: 20%; left: 80%; animation: blink 3s infinite; }
+                .binary-3 { top: 70%; left: 30%; animation: blink 2.5s infinite; }
+                .binary-4 { top: 60%; left: 70%; animation: blink 4s infinite; }
+                .binary-5 { top: 40%; left: 20%; animation: blink 3.5s infinite; }
+                .binary-6 { top: 30%; left: 60%; animation: blink 2.8s infinite; }
+                .binary-7 { top: 80%; left: 40%; animation: blink 3.2s infinite; }
+                .binary-8 { top: 50%; left: 90%; animation: blink 2.2s infinite; }
+                
+                .robot-scene {
+                    position: relative;
+                    width: 100%;
+                    height: 100px;
+                    margin-bottom: 20px;
+                    z-index: 3;
+                }
+                
+                .robot {
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    font-size: 60px;
+                    animation: robotMove 10s ease-in-out infinite;
+                }
+                
+                .robot-shadow {
+                    position: absolute;
+                    bottom: -10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 40px;
+                    height: 10px;
+                    background: rgba(0,0,0,0.3);
+                    border-radius: 50%;
+                    filter: blur(3px);
+                    animation: robotMove 10s ease-in-out infinite;
+                }
+                
+				h1 {
+					font-size: 70px;
+					line-height: 1.3;
+                    font-weight: 800;
+                    text-shadow: 0 0 10px rgba(0, 255, 170, 0.8);
+                    z-index: 3;
+                    animation: pulse 3s ease-in-out infinite, fadeIn 1.5s ease-in-out;
+                    margin: 0;
+                    background: -webkit-linear-gradient(#ffffff, #00ffaa);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+				}
+                
+                .subtitle {
+                    font-size: 28px;
+                    background: rgba(0, 0, 0, 0.3);
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    margin-top: 20px;
+                    border: 1px solid rgba(0, 255, 170, 0.3);
+                    z-index: 3;
+                    animation: fadeIn 2s ease-in-out;
+                    box-shadow: 0 0 20px rgba(0, 255, 170, 0.3);
+                }
+                
+                .glow {
+                    text-shadow: 0 0 10px #00ffaa, 0 0 20px #00ffaa;
+                }
+                
+                .tech-icons {
+                    position: absolute;
+                    bottom: 20px;
+                    display: flex;
+                    justify-content: center;
+                    gap: 30px;
+                    z-index: 3;
+                }
+                
+                .tech-icon {
+                    font-size: 24px;
+                    opacity: 0.7;
+                    transition: all 0.3s ease;
+                }
+                
+                .tech-icon:hover {
+                    opacity: 1;
+                    transform: translateY(-5px);
+                }
+			</style>
+            <div class="container">
+                <div class="circuit-bg"></div>
+                
+                <div class="binary binary-1">01001001</div>
+                <div class="binary binary-2">10101010</div>
+                <div class="binary binary-3">11001100</div>
+                <div class="binary binary-4">10011001</div>
+                <div class="binary binary-5">01110111</div>
+                <div class="binary binary-6">10001000</div>
+                <div class="binary binary-7">11100111</div>
+                <div class="binary binary-8">01010101</div>
+                
+                <div class="robot-scene">
+                    <div class="robot">🤖</div>
+                    <div class="robot-shadow"></div>
+                </div>
+                
+                <h1>TANVEER AHMED KHAN</h1>
+                <div class="subtitle">
+                    <span class="glow">AI Engineer</span> | <span class="glow">Blockchain Developer</span> | <span class="glow">Data Scientist</span>
+                </div>
+                
+                <div class="tech-icons">
+                    <div class="tech-icon">🧠</div>
+                    <div class="tech-icon">⚙️</div>
+                    <div class="tech-icon">🔗</div>
+                    <div class="tech-icon">💻</div>
+                    <div class="tech-icon">📊</div>
+                </div>
+            </div>
+		</div>
+	</foreignObject>
+</svg>
