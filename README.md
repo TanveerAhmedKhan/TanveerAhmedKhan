@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/TanveerAhmedKhan/TanveerAhmedKhan/main/assets/robot-banner.svg" alt="Tanveer Ahmed Khan - AI Engineer | Blockchain Developer | Data Scientist" width="100%"/>
+  <img src="https://raw.githubusercontent.com/TanveerAhmedKhan/TanveerAhmedKhan/main/assets/robot-banner.svg" alt="Tanveer Ahmed Khan - AI Engineer | Data Scientist" width="100%"/>
 </div>
 
 <p align="center">
@@ -12,7 +12,7 @@
 
 ## 🚀 About Me
 
-Passionate AI Engineer and Blockchain Developer with expertise in building intelligent systems and decentralized applications. I specialize in developing machine learning models, natural language processing solutions, and blockchain-based applications that solve real-world problems.
+Passionate AI Engineer and Data Scientist with expertise in building intelligent systems and data-driven solutions. I specialize in developing machine learning models, natural language processing solutions, and AI applications that solve real-world problems.
 
 My journey in technology is driven by a desire to create innovative solutions that leverage cutting-edge technologies. I'm constantly exploring new frameworks, tools, and methodologies to enhance my skills and deliver high-quality software.
 
@@ -24,7 +24,6 @@ My journey in technology is driven by a desire to create innovative solutions th
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
   <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow"/>
   <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch"/>
-  <img src="https://img.shields.io/badge/Blockchain-121D33?style=for-the-badge&logo=bitcoin-sv&logoColor=white" alt="Blockchain"/>
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
@@ -38,12 +37,6 @@ My journey in technology is driven by a desire to create innovative solutions th
 - Reinforcement Learning
 - LLM Applications & Fine-tuning
 
-### Blockchain Development
-- Smart Contracts
-- Decentralized Applications (DApps)
-- Web3 Integration
-- Tokenomics & Cryptocurrency
-
 ### Software Development
 - Full-Stack Development
 - API Design & Development
@@ -56,7 +49,7 @@ My journey in technology is driven by a desire to create innovative solutions th
 ## 🔭 Featured Projects
 
 ### [Halalbot](https://github.com/TanveerAhmedKhan/Halalbot)
-A blockchain-based chatbot for Halal verification and certification, leveraging AI to provide accurate information about Halal products and services.
+An AI-powered chatbot for Halal verification and certification, providing accurate information about Halal products and services.
 
 ### [MsTGCN](https://github.com/TanveerAhmedKhan/MsTGCN)
 Multi-scale Temporal Graph Convolutional Network for time series forecasting and analysis, with applications in financial markets and traffic prediction.
@@ -84,9 +77,9 @@ A comprehensive restaurant reservation platform with real-time booking, table ma
 ## 🌱 Currently Learning
 
 - Advanced Large Language Model Applications
-- Blockchain Interoperability Solutions
 - Quantum Computing Fundamentals
 - Edge AI Deployment Strategies
+- Computer Vision Applications
 
 ---
 
