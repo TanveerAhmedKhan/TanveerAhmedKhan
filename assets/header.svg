@@ -1,0 +1,148 @@
+<svg fill="none" viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+	<foreignObject width="100%" height="100%">
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<style>
+				@keyframes gradientBackground {
+					0% {
+						background-position: 0% 50%;
+					}
+					50% {
+						background-position: 100% 50%;
+					}
+					100% {
+						background-position: 0% 50%;
+					}
+				}
+                
+                @keyframes fadeIn {
+                    0% {
+                        opacity: 0;
+                    }
+                    100% {
+                        opacity: 1;
+                    }
+                }
+                
+                @keyframes robotFloat {
+                    0% {
+                        transform: translateY(0);
+                    }
+                    50% {
+                        transform: translateY(-15px);
+                    }
+                    100% {
+                        transform: translateY(0);
+                    }
+                }
+                
+                @keyframes blink {
+                    0% {
+                        opacity: 0;
+                    }
+                    50% {
+                        opacity: 1;
+                    }
+                    100% {
+                        opacity: 0;
+                    }
+                }
+                
+				.container {
+					font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					margin: 0;
+					width: 100%;
+					height: 400px;
+					background: linear-gradient(45deg, #0f2027, #203a43, #2c5364, #203a43, #0f2027);
+					background-size: 600% 400%;
+					animation: gradientBackground 10s ease infinite;
+					border-radius: 10px;
+					color: white;
+					text-align: center;
+				}
+                
+                .robot-container {
+                    position: relative;
+                    animation: robotFloat 3s ease-in-out infinite;
+                    margin-bottom: 20px;
+                }
+                
+                .robot {
+                    font-size: 80px;
+                    margin-bottom: 10px;
+                }
+                
+                .circuit-lines {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0.2;
+                    background-image: 
+                        radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px),
+                        linear-gradient(to right, rgba(255,255,255,0.1) 1px, transparent 1px),
+                        linear-gradient(to bottom, rgba(255,255,255,0.1) 1px, transparent 1px);
+                    background-size: 20px 20px, 20px 20px, 20px 20px;
+                    z-index: 0;
+                }
+                
+                .binary {
+                    position: absolute;
+                    font-family: monospace;
+                    font-size: 14px;
+                    color: rgba(0, 255, 170, 0.3);
+                    z-index: 0;
+                }
+                
+                .binary-1 { top: 10%; left: 10%; animation: blink 2s infinite; }
+                .binary-2 { top: 20%; left: 80%; animation: blink 3s infinite; }
+                .binary-3 { top: 70%; left: 30%; animation: blink 2.5s infinite; }
+                .binary-4 { top: 60%; left: 70%; animation: blink 4s infinite; }
+                
+				h1 {
+					font-size: 50px;
+					line-height: 1.3;
+                    font-weight: 700;
+                    text-shadow: 0 0 10px rgba(0, 255, 170, 0.8);
+                    z-index: 1;
+                    animation: fadeIn 1.5s ease-in-out;
+				}
+                
+                .subtitle {
+                    font-size: 24px;
+                    background: rgba(0, 0, 0, 0.3);
+                    padding: 8px 16px;
+                    border-radius: 16px;
+                    margin-top: 10px;
+                    border: 1px solid rgba(0, 255, 170, 0.3);
+                    z-index: 1;
+                    animation: fadeIn 2s ease-in-out;
+                }
+                
+                .glow {
+                    text-shadow: 0 0 10px #00ffaa, 0 0 20px #00ffaa, 0 0 30px #00ffaa;
+                }
+			</style>
+            <div class="container">
+                <div class="circuit-lines"></div>
+                <div class="binary binary-1">01001001</div>
+                <div class="binary binary-2">10101010</div>
+                <div class="binary binary-3">11001100</div>
+                <div class="binary binary-4">10011001</div>
+                
+                <div class="robot-container">
+                    <div class="robot">🤖</div>
+                </div>
+                
+                <h1>Tanveer Ahmed Khan</h1>
+                <div class="subtitle">
+                    <span class="glow">AI Engineer</span> | <span class="glow">Blockchain Developer</span> | <span class="glow">Data Scientist</span>
+                </div>
+            </div>
+		</div>
+	</foreignObject>
+</svg>
