@@ -1,10 +1,6 @@
-# <div align="center">👨‍💻 Tanveer Ahmed Khan</div>
-
 <div align="center">
-  <img src="https://raw.githubusercontent.com/gist/patevs/b007a0e98fb216438d4cbf559fac4166/raw/88f20c9d749d756be63f22b09f3c4ac570bc5101/programming.gif" alt="AI and Programming" width="100%"/>
+  <img src="https://raw.githubusercontent.com/TanveerAhmedKhan/TanveerAhmedKhan/main/assets/robot-banner.svg" alt="Tanveer Ahmed Khan - AI Engineer | Blockchain Developer | Data Scientist" width="100%"/>
 </div>
-
-<h3 align="center">AI Engineer | Blockchain Developer | Data Scientist</h3>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/tanveer-ahmed-khan-b089461a3/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
