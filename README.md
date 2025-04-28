@@ -98,7 +98,7 @@ A comprehensive restaurant reservation platform with real-time booking, table ma
 
 - LinkedIn: [Tanveer Ahmed Khan](https://www.linkedin.com/in/tanveer-ahmed-khan-b089461a3/)
 - GitHub: [@TanveerAhmedKhan](https://github.com/TanveerAhmedKhan)
-- Email: [Contact me via LinkedIn]
+- Email: [tanveerkhan1284@gmail.com]
 
 ---
 
