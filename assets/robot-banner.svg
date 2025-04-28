@@ -206,13 +206,12 @@
                 
                 <h1>TANVEER AHMED KHAN</h1>
                 <div class="subtitle">
-                    <span class="glow">AI Engineer</span> | <span class="glow">Blockchain Developer</span> | <span class="glow">Data Scientist</span>
+                    <span class="glow">AI Engineer</span> | <span class="glow">Data Scientist</span>
                 </div>
                 
                 <div class="tech-icons">
                     <div class="tech-icon">🧠</div>
                     <div class="tech-icon">⚙️</div>
-                    <div class="tech-icon">🔗</div>
                     <div class="tech-icon">💻</div>
                     <div class="tech-icon">📊</div>
                 </div>
